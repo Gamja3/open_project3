@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>GPS 카카오 연동</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" /> -->
+    <link rel="stylesheet" href="/client/css/parking_style.css">
+</head>
+
+<body>
+    <div class="container wrapper">
+        <section class="parking_map_all container">
+            <div class="parking_map_all_title">
+                <p>주차 안내</p>
+            </div>
+            <div class="parking_map">
+                <div class="parking_map_contents">
+                    
+                    <div class="parking_map_whale">
+                        <img src="/client/file/whale_s.png" alt="whale">
+                    </div>
+                        <!-- Kakao Map -->
+                        <div id="map" style="width:100%;height:150px;"></div>
+                        
+                        <!-- Kakao Map Bottom Link -->
+                        <div class="wrap_controllers">
+                            <a class="tit_controllers" href="https://map.kakao.com" target="_blank">
+                                <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                                    width="100%" height="16" alt="카카오맵" style="display:block;width:72px;height:16px">
+                            </a>
+                            <div class="wrap_btn_roadview">
+                                <a class="txt" target="_blank" href="https://map.kakao.com/link/to/8053416">
+                                    길찾기
+                                </a>
+                            </div>
+                        </div>
+                        <!-- // Kakao Map -->
+                </div>
+            </div>
+        </section>
+        <section class="parking_all">
+            <div class="parking_museum">
+                <div class="parking_museum_title">
+                    <p>고래박물관 부설주차장</p>
+                </div>
+                <div class="parking_line">
+                    <!-- 밑줄 들어가는 부분 -->
+                </div>
+                <div class="parking_museum_text">
+                    <div class="text_title">
+                        <p>> 운영시간</p>
+                    </div>
+                    <div class="text_contents">
+                        <p>▷10:30 ~ 18:00(평일)</p>
+                        <p>▷09:00 ~ 18:00(주말, 공휴일)</p>
+                    </div>
+                </div>
+                <div class="parking_museum_text">
+                    <div class="text_title">
+                        <p>> 휴무일</p>
+                    </div>
+                    <div class="text_contents">
+                        <p>▷월요일</p>
+                    </div>
+                </div>
+                <div class="parking_museum_text">
+                    <div class="text_title">
+                        <p>> 주차요금</p>
+                    </div>
+                    <div class="text_contents">
+                        <p>▷유료주차 (30분당 500원)</p>
+                        <p>▷시설 이용시 3시간 무료</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parking_museum">
+                <div class="parking_museum_title">
+                    <p>고래문화마을 주차장</p>
+                </div>
+                <div class="parking_line">
+                    <!-- 밑줄 들어가는 부분 -->
+                </div>
+                <div class="parking_museum_text">
+                    <div class="text_title">
+                        <p>> 주차요금</p>
+                    </div>
+                    <div class="text_contents">
+                        <p>▷무료주차</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+<!-- bootstrap navbar -->
+<%- include('footer.html') %>
+<!-- // bootstrap navbar -->
+
+
+
+    <!-- Kakao Map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7485753ca84a3c34b78ea8ebceaf7132"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(35.50273127014486, 129.38162599900554), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+        // 마커가 표시될 위치
+        var markerPosition = new kakao.maps.LatLng(35.50273127014486, 129.38162599900554);
+        // 마커를 생성
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        // 마커가 지도 위에 표시되도록 설정
+        marker.setMap(map);
+    </script>
+
+</body>
+
+</html>

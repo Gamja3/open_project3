@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS 카카오 연동</title>
+    <link rel="stylesheet" href="/client/css/login.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <section class="all_contents">
+        
+        <!--로그인 타이틀-->
+        <div class="title">
+            <p>Login</p>
+        </div>
+
+        <!--전화번호 인증-->
+        <div class="input_all">
+            <div class="input_call">
+                <div class="input_call_name">
+                    <div class="input_call_name_title">
+                        <p>이름</p>
+                    </div>
+                    <div class="input_call_name_input">
+                        <input id="inputName" type="text" id="Name">
+                    </div>
+                </div>
+
+                <div class="input_call_name">
+                    <div class="input_call_name_title">
+                        <p>전화번호</p>
+                    </div>
+                    <div class="input_call_name_input">
+                        <input id="inputTel" type="text" id="Call">
+                    </div>
+                </div>
+                
+                <div class="input_call_button">
+                    <div class="input_call_button_title">
+                        <button>인증번호 받기</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--또는-->
+            <div class="input_line">
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="line_text">
+                    <p>또는</p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
+
+            <!--카카오 버튼-->
+            <div class="input_kakao">
+                <button class="kakao_button">
+                    <img src="/client/file/kakako_logo.png" alt="카카오 버튼 이미지">
+                    <p>카카오로 시작하기</p>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section class="wave_whale">
+        <img src="/client/file/wave_1.png" alt="고래물결">
+    </section>
+
+
+
+<script>
+
+
+    // 카카오 버튼 눌러서 다음 페이지로 이동
+    let $kakaoButton = document.querySelector('.input_kakao');
+
+    $kakaoButton.addEventListener('click', function(){
+        window.location.href="/home"
+    })
+
+
+    let $inputCallButton = document.querySelector('.input_call_button button');
+    let $inputName = document.querySelector('#inputName');
+    let $inputTel = document.querySelector('#inputTel');
+
+
+    $inputCallButton.addEventListener('click', function(){
+        console.log($inputName.value)
+        if($inputName.value && $inputTel.value != ""){
+            window.location.href="/home"
+        } else {
+            Swal.fire(
+                '로그인 오류',
+                '이름과 전화번호를 확인해주세요',
+                'error'
+            )
+        }
+    })
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

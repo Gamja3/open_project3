@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>GPS 카카오 연동</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" /> -->
+    <link rel="stylesheet" href="/client/css/restaurant_style.css">
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8b8edd9d5ec0848310a8f575442e7ef7"></script>
+    <script src="/client/js/restaurant.js" defer></script>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <section class="restaurant_map_all container">
+            <div class="restaurant_map_all_title">
+                <p>맛집소개</p>
+            </div>
+            <div class="restaurant_map">
+                <div class="restaurant_map_contents">
+                    <div id="location-map"></div>
+                    <!--지도 넣는 자리 >-0 -->
+                    <div class="restaurant_map_whale">
+                        <img src="/client/file/whale_s.png" alt="whale">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="restaurant_all container">
+            <div class="restaurant_home" id="list-1">
+                <div>
+                    <div class="restaurant_home_1">
+                        <div class="restaurant_home_1_num">
+                            <p>1</p>
+                            <p>골목할매집</p>
+                        </div>
+                        <div class="restaurant_home_2">
+                            <img src="/client/file/call.png" alt="call">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_home_3">
+                    <img src="/client/file/golmok1.png" alt="">
+                    <div>
+                        <p>고래고기</p>
+                        <p>등지느러미에 쫄깃쫄깃한 맛이나고
+                            다양한 부위를 모둠으로
+                            즐길 수 있는 고래 고기</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="restaurant_home" id="list-2">
+                <div>
+                    <div class="restaurant_home_1">
+                        <div class="restaurant_home_1_num">
+                            <p>2</p>
+                            <p>대풍한식집</p>
+                        </div>
+                        <div class="restaurant_home_2">
+                            <img src="/client/file/call.png" alt="call">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_home_3">
+                    <img src="/client/file/golmok1.png" alt="">
+                    <div>
+                        <p>고래고기</p>
+                        <p>등지느러미에 쫄깃쫄깃한 맛이나고
+                            다양한 부위를 모둠으로
+                            즐길 수 있는 고래 고기</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="restaurant_home" id="list-3">
+                <div>
+                    <div class="restaurant_home_1">
+                        <div class="restaurant_home_1_num">
+                            <p>3</p>
+                            <p>잔향한식</p>
+                        </div>
+                        <div class="restaurant_home_2">
+                            <img src="/client/file/call.png" alt="call">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_home_3">
+                    <img src="/client/file/golmok1.png" alt="">
+                    <div>
+                        <p>고래고기</p>
+                        <p>등지느러미에 쫄깃쫄깃한 맛이나고
+                            다양한 부위를 모둠으로
+                            즐길 수 있는 고래 고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant_home" id="list-4">
+                <div>
+                    <div class="restaurant_home_1">
+                        <div class="restaurant_home_1_num">
+                            <p>4</p>
+                            <p>고래고기원조할매집</p>
+                        </div>
+                        <div class="restaurant_home_2">
+                            <img src="/client/file/call.png" alt="call">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_home_3">
+                    <img src="/client/file/golmok1.png" alt="">
+                    <div>
+                        <p>고래고기</p>
+                        <p>등지느러미에 쫄깃쫄깃한 맛이나고
+                            다양한 부위를 모둠으로
+                            즐길 수 있는 고래 고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant_home" id="list-5">
+                <div>
+                    <div class="restaurant_home_1">
+                        <div class="restaurant_home_1_num">
+                            <p>5</p>
+                            <p>세창식당</p>
+                        </div>
+                        <div class="restaurant_home_2">
+                            <img src="/client/file/call.png" alt="call">
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_home_3">
+                    <img src="/client/file/golmok1.png" alt="">
+                    <div>
+                        <p>고래고기</p>
+                        <p>등지느러미에 쫄깃쫄깃한 맛이나고
+                            다양한 부위를 모둠으로
+                            즐길 수 있는 고래 고기</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        
+        </section>
+
+
+    </div>
+
+
+
+<!-- bootstrap navbar -->
+<%- include('footer.html') %>
+<!-- // bootstrap navbar -->
+
+
+</body>
+
+</html>

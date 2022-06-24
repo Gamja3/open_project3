@@ -1,0 +1,273 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(255, 255, 255); text-decoration: none; }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px; 
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+
+.wrapper{
+    margin: 0 auto;
+}
+
+/*배경색*/
+body {
+    margin: 0 auto;
+    background: #FCFCFC;
+    font-family: 'GmarketSansMedium';
+    width: 100%;
+    height: 100%;
+}
+
+
+/*컨텐츠*/
+.all_contents {
+    margin: 110px 35px;
+}
+
+/*타이틀*/
+.title {
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+/*전화번호 인증*/
+.input_all {
+    margin-top: 55px;
+}
+
+.input_call_name {
+    margin-top: 35px;
+}
+
+.input_call_name_title p {
+    font-size: 1.2em;
+}
+
+
+
+.input_call_name_input input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+
+
+.input_call_button {
+    margin: 25px 0 45px 0;
+}
+
+.input_call_button_title {
+    text-align: center;
+}
+
+.input_call_button_title button {
+    border: 0;
+    border-radius: 10px;
+    background: #FFEA97;
+    padding: 6px 12px;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+}
+
+/*또는*/
+.input_line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_line .line {
+    width: 100%;
+}
+
+.input_line .line_text {
+    font-size: 1.1em;
+    width: 30%;
+    text-align: center;
+}
+
+/*카카오 버튼*/
+.input_kakao { 
+    margin-bottom: 220px;
+    z-index: 50;
+}
+
+.input_kakao .kakao_button {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    height: 42px;
+    border: 0;
+    border-radius: 12px;
+    background: #FFEB01;
+    align-items: center;
+}
+
+.input_kakao .kakao_button img {
+    margin-left: 20px;
+    max-width: 30px;
+}
+
+.input_kakao .kakao_button p {
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+/*물결*/
+.wave_whale img {
+    position: fixed;
+    bottom: 0;
+    width: 200%;
+    object-position: center;
+    transform: translateX(-25%);
+}
+
+
+@media (min-width: 640px) {
+    body {
+        margin: 0 auto;
+        background: #FCFCFC;
+        font-family: 'GmarketSansMedium';
+        width: 100%;
+        height: 100%;
+    }
+    
+    .input_all {
+        margin: auto;
+    }
+
+    .input_call {
+        max-width: 550px;
+        margin: auto;
+        
+    }
+
+    .input_call_name_title p {
+        text-align: left;
+    }
+
+    .input_call_name_input input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 45px;
+        max-width: 550px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    .input_call_button {
+        margin: 25px 0 45px 0;
+    }
+    
+    .input_call_button_title {
+        max-width: 550px;
+        text-align: center;
+    }
+    
+    .input_call_button_title button {
+        border: 0;
+        border-radius: 10px;
+        background: #FFEA97;
+        padding: 6px 12px;
+        font-family: 'GmarketSansMedium';
+        font-size: 16px;
+    }
+    
+    /*또는*/
+    .input_line {
+        max-width: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .input_line .line {
+        width: 100%;
+    }
+    
+    .input_line .line_text {
+        font-size: 1.1em;
+        width: 30%;
+        text-align: center;
+    }
+    
+    /*카카오 버튼*/
+    .input_kakao .kakao_button {
+        margin: auto;
+    }
+
+    .input_kakao .kakao_button {
+        max-width: 550px;
+        margin-top: 45px;
+        display: flex;
+        height: 42px;
+        border: 0;
+        border-radius: 12px;
+        background: #FFEB01;
+        align-items: center;
+    }
+    
+    .input_kakao .kakao_button img {
+        margin-left: 20px;
+        max-width: 30px;
+    }
+    
+    .input_kakao .kakao_button p {
+        font-family: 'GmarketSansMedium';
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /*물결*/
+    .wave_whale img {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        object-position: center;
+        transform: initial;
+    }
+}

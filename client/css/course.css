@@ -1,0 +1,63 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(255, 255, 255); text-decoration: none; }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+}
+
+/*배경색*/
+body {
+    background: #F2F2F2;
+    font-family: 'GmarketSansMedium';
+}
+
+.course_contents_whale {
+    position: sticky;
+    margin-left: 16px;
+    top:-115px;
+}
+
+#contentsBox { 
+    font-family: 'GangwonEdu_OTFBoldA'
+}
+
+/*푸터 메인 버튼*/
+footer {
+    width: 100%;
+    background: #002461;
+    margin-top: 25px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 30px 60px;
+    box-shadow: 4px -2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+}
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.footer_menu .button_object_img{
+    margin-bottom: 10px;
+}

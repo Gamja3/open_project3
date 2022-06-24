@@ -1,0 +1,148 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(255, 255, 255); text-decoration: none; }
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+
+/*배경색*/
+body {
+    background: #F2F2F2;
+    font-family: 'GmarketSansMedium';
+}
+
+/*타이틀*/
+.come_map_all_title {
+    padding-top: 75px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*지도*/
+.come_map {
+    position: relative;
+    margin: 35px 16px;
+    width: calc(100% - 32px);
+}
+.come_map .come_map_contents {
+    position:relative;
+    height: 150px;
+    /* border: 1px solid black; */
+    border-radius: 10px 10px 0 0 ;
+    /* box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); */
+    border: 1px solid #dfdfdf;
+    border-bottom: none;
+    border-color: rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.come_map_whale {
+    position : absolute;
+    top: -35px;
+    z-index: -10;
+    right: 5%;
+}
+
+/*오시는길*/
+.come_all {
+    height: 400px;
+    width: calc(100% - 32px);
+    margin: 0 16px 150px 16px;
+    border-radius: 10px;
+    background-color: #FCFCFC;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.come_all #boxs {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.come_all #boxs .box{
+    cursor: pointer;
+}
+
+.come_line {
+    margin: 0 10px 25px 10px;
+    width: calc(100% - 20px);
+    height: 3px;
+    background: #002461;
+}
+
+.come_all .bigbox {
+    margin: 0 20px;
+}
+
+.come_all .bigbox .bigboxs_title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+
+.come_all .bigbox .bigboxs_text p:nth-of-type(2n) {
+    margin-left: 10px;
+}
+.come_all #box7 .bigboxs_text p:nth-of-type(5) {
+    margin-left: 10px;
+}
+
+@media (min-width: 640px) {
+  .container {
+      max-width: 550px; 
+  }
+}
+
+/*푸터 메인 버튼*/
+footer {
+  width: 100%;
+  background: #002461;
+  margin-top: 25px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 30px 60px;
+  box-shadow: 4px -2px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+}
+.footer_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer_menu .button_object_img{
+  margin-bottom: 10px;
+}
+
+/* Kakao Map Bottom Link */
+.wrap_controllers {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 7px 11px;
+  border: 1px solid #dfdfdf;
+  border-color: rgba(0,0,0,.1);
+  border-radius: 0 0 10px 10px;
+  background-color: #f9f9f9;
+}
+
+.txt {
+  color: #000;
+}
+/* // Kakao Map Bottom Link */

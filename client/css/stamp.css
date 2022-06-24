@@ -1,0 +1,175 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(255, 255, 255); text-decoration: none; }
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+width: 100%;
+}
+
+.wrapper{
+  margin: 0 auto;
+}
+
+body{font-family: 'GmarketSansMedium';}
+
+.main{
+    width: 100%;
+    background: url(../file/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bin{
+    height: 60vw;
+}
+
+.dong1 {
+    display: flex;
+    margin: 0 16px;
+    width: calc(100% - 32px);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.dong2 {
+  position: relative;
+    width: 25.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 3vw 1vw 3vw;
+}
+
+.stamp {
+  position: absolute;
+  z-index: 50;
+}
+
+.dong3 {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.name1 {
+    padding-top: 8px;
+    font-size: 3vw;
+    color: white;
+}
+
+#img1 {
+  background: url(/client/images/stamp/stamp00.JPG);
+  /* background: url(/client/images/stamp/stamp00-clear.png); */
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img2 {
+    background: url(/client/images/stamp/stamp01.jpg);
+    /* background: url(/client/images/stamp/stamp01-clear.png); */
+}
+
+#img3 {
+  background: url(/client/images/stamp/stamp02.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img4 {
+  background: url(/client/images/stamp/stamp03.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img5 {
+  background: url(/client/images/stamp/stamp04.JPG);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img6 {
+  background: url(/client/images/stamp/stamp05.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img7 {
+  background: url(/client/images/stamp/stamp06.JPG);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img8 {
+  background: url(/client/images/stamp/stamp07.JPG);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img9 {
+  background: url(/client/images/stamp/stamp08.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img10 {
+  background: url(/client/images/stamp/stamp09.JPG);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img11 { 
+  background: url(/client/images/stamp/stamp10.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#img12 {
+  background: url(/client/images/stamp/stamp11.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+footer {
+    width: 100%;
+    background: #002461;
+    margin-top: 25px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 30px 60px;
+    box-shadow: 4px -2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .footer_menu .button_object_img{
+    margin-bottom: 10px;
+  }

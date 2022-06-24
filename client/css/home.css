@@ -1,0 +1,195 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(0, 0, 0); text-decoration: none; }
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.wrapper{
+  margin: 0 auto;
+}
+
+/*배경*/
+body {
+  background: #F2F2F2;
+  font-family: 'GmarketSansMedium';
+}
+
+/*배너 이미지*/
+.banner img {
+  width: 100%;
+}
+
+/*스탬프 방법*/
+.way_home {
+  position: relative;
+}
+.way_home .way {
+  width: calc(100% - 32px);
+  height: 290px;
+  margin: 0 16px;
+  position: absolute;
+  top:-85px;
+  background: url(/client/file/way_back.png);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.way_home .way_title {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.way_home .way_title p span {
+  background: linear-gradient(to top, #BBE4E5 50%, transparent 50%);
+}
+/* .way_home .way_title::before {
+  content: '';
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 12px;
+  transform: translateX(-50%);
+  margin-top: 34px;
+  z-index: 0;
+  opacity: 0.5;
+} */
+
+.way_home .way_contents {
+  padding: 15px;
+}
+.way_home .way_circle_all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.way_home .way_circle {
+  background: #FFEA97;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+.way_home .way_circle :nth-of-type(3){
+  position: relative;
+}
+.way_home .way_contents .way_whale {
+  position: absolute;
+  top:-30px;
+  z-index: -10;
+}
+.way_home .way_circle .way_text {
+  text-align: center;
+}
+.way_home .way_circle .way_text .way_text_top{
+  padding: 10px 0 8px 0;
+  font-weight: bold;
+}
+
+/*버튼*/
+.button {
+  width: calc(100% - 32px);
+  margin: 230px 16px 150px 16px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  padding:15px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button .button_contents {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.button .button_contents .button_object_img {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 640px) {
+  /*배너 이미지*/
+  .banner {
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+  }
+
+/*스탬프 방법*/
+.way_home {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+.way_home .way {
+  width: calc(100% - 32px);
+  height: 290px;
+  margin: 0 16px;
+  position: absolute;
+  top:-85px;
+  background: url(/client/file/way_back.png);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.top {
+  margin-bottom:230px;
+}
+/*버튼*/
+.button {
+  margin: auto;
+  max-width: 768px;
+  width: calc(100% - 32px);
+  margin-bottom: 150px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  padding:15px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+}
+
+/*푸터 메인 버튼*/
+footer {
+  width: 100%;
+  background: #002461;
+  margin-top: 25px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 30px 60px;
+  box-shadow: 4px -2px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+}
+footer .button_object_text {
+  color: white;
+}
+.footer_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer_menu .button_object_img{
+  margin: 10px;
+}

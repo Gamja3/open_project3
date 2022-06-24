@@ -1,0 +1,80 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { color: rgb(255, 255, 255); text-decoration: none; }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px; 
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+
+.wrapper{
+    margin: 0 auto;
+}
+
+/*배경색*/
+body {
+    background: #FCFCFC;
+    font-family: 'GmarketSansMedium';
+    width: 100%;
+    height: 100%;
+}
+
+/*타이틀*/
+.title {
+    margin: 300px 0 0 35px;
+}
+
+.title .title_stamp {
+    position: absolute;
+    padding-left: 110px;
+}
+
+.title .title_stamp img {
+    width: 75px;
+    opacity: 35%;
+}
+
+.title_text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*물결*/
+.wave_whale img {
+    position: fixed;
+    bottom: 0;
+    width: 200%;
+    object-position: center;
+    transform: translateX(-25%);
+}
+

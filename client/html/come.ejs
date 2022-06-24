@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>GPS 카카오 연동</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" /> -->
+    <link rel="stylesheet" href="/client/css/come_style.css">
+</head>
+
+<body>
+    <div class="container wrapper">
+        <section class="come_map_all container">
+            <div class="come_map_all_title">
+                <p>오시는 길</p>
+            </div>
+            <div class="come_map">
+                <div class="come_map_contents">
+                    <!-- Kakao Map -->
+                    <div id="map" style="width:100%;height:150px;"></div>
+                    <div class="come_map_whale">
+                        <img src="/client/file/whale_s.png" alt="whale">
+                    </div>
+                    </div>
+                    <!-- Kakao Map Bottom Link -->
+                    <div class="wrap_controllers">
+                        <a class="tit_controllers" href="https://map.kakao.com" target="_blank">
+                            <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                                width="100%" height="16" alt="카카오맵" style="display:block;width:72px;height:16px">
+                        </a>
+                        <div class="wrap_btn_roadview">
+                            <a class="txt" target="_blank" href="https://map.kakao.com/link/to/8053416">
+                                길찾기
+                            </a>
+                        </div>
+                    </div>
+                    <!-- // Kakao Map -->
+        </section>
+        <section class="come_all">
+            <div id="boxs">
+                <div class="box" id="box1" onclick="box01(),btn01()">
+                    <div id="box1_1">
+                        <img src="/client/file/bus.png" alt="bus">
+                    </div>
+                    <div id="box1_2">
+                        <img src="/client/file/bus_red.png" alt="bus">
+                    </div>
+                    <p>버스</p>
+                </div>
+                <div class="box" id="box2" onclick="box02(),btn02()">
+                    <div id="box2_1">
+                        <img src="/client/file/train.png" alt="train">
+                    </div>
+                    <div id="box2_2">
+                        <img src="/client/file/train_red.png" alt="train">
+                    </div>
+                    <p>일반열차</p>
+                </div>
+                <div class="box" id="box3" onclick="box03(),btn03()">
+                    <div id="box3_1">
+                        <img src="/client/file/ktx.png" alt="ktx">
+                    </div>
+                    <div id="box3_2">
+                        <img src="/client/file/kxt_red.png" alt="ktx">
+                    </div>
+                    <p>고속열차</p>
+                </div>
+                <div class="box" id="box4" onclick="box04(),btn04()">
+                    <div id="box4_1">
+                        <img src="/client/file/airplane.png" alt="airplane">
+                    </div>
+                    <div id="box4_2">
+                        <img src="/client/file/airplane_red.png" alt="airplane">
+                    </div>
+                    <p>항공</p>
+                </div>
+            </div>
+            <div class="come_line">
+                <!-- 밑줄 들어가는 부분 -->
+            </div>
+            <div id="bigboxs">
+                <!--bus-->
+                <div class="bigbox"id="box5">
+                    <div class="bigboxs_title">
+                        <p>시외·고속버스</p>
+                    </div>
+                    <div class="bigboxs_text">
+                        <p>> 택시 [20분 소요, 8000원]</p>
+                        <p>▷터미널 > 장생포고래문화특구</p>
+                        <p>> 시내버스 [30분 소요]</p>
+                        <p>▷고속버스터미널앞 정류장 승차 > 장생포 고래박물관 정류장 하차</p>
+                    </div>
+                </div>
+                <!--train-->
+                <div class="bigbox"id="box6">
+                    <div class="bigboxs_title">
+                        <p>일반열차 (태화강역)</p>
+                    </div>
+                    <div class="bigboxs_text">
+                        <p>> 택시 [20분 소요, 8000원]</p>
+                        <p>▷터미널 > 장생포고래문화특구</p>
+                        <p>> 시내버스 [50분 소요]</p>
+                        <p>▷고속버스터미널앞 정류장 승차 > 시외고속버스터미널 정류장 하차 > 보람병원입구 정류장 승차 > 장생포고래박물관 정류장 하차</p>
+                    </div>
+                </div>
+                <!--ktx-->
+                <div class="bigbox"id="box7">
+                    <div class="bigboxs_title">
+                        <p>고속열차 (울산역)</p>
+                    </div>
+                    <div class="bigboxs_text">
+                        <p>> 택시 [1시간 소요, 28,000원]</p>
+                        <p>▷울산역 > 장생포고래문화특구</p>
+                        <p>> 시내버스 [1시간 40분 소요]</p>
+                        <p>▷KTX울산역 정류장 5001번 승차 > 시청앞 정 류장 하차 후 256 환승 > 장생포고래박물관 류장 하차</p>
+                        <p>▷KTX울산역 정류장 5004번 승차 > 법원 정류장 하차 후 406 환승 > 장생포고래박물관 류장 하차</p>
+                    </div>
+                </div>
+                <!--airplane-->
+                <div class="bigbox"id="box8">
+                    <div class="bigboxs_title">
+                        <p>항공편 (울산공항)</p>
+                    </div>
+                    <div class="bigboxs_text">
+                        <p>> 택시 [35분 소요, 14,000원]</p>
+                        <p>▷울산공항 > 장생포고래문화특구</p>
+                        <p>> 시내버스 [1시간 40분 소요]</p>
+                        <p>▷울산공항 정류장 승차 > 장생포고래박물관 정류장 하차</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+<!-- bootstrap navbar -->
+<%- include('footer.html') %>
+<!-- // bootstrap navbar -->
+
+
+    <!-- Kakao Map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7485753ca84a3c34b78ea8ebceaf7132"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(35.50288682489229, 129.38077684025552), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+        // 마커가 표시될 위치
+        var markerPosition = new kakao.maps.LatLng(35.50288682489229, 129.38077684025552);
+        // 마커를 생성
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        // 마커가 지도 위에 표시되도록 설정
+        marker.setMap(map);
+    </script>
+
+
+    <script>
+        var box1 = document.querySelector("#box1")
+        var box2 = document.querySelector("#box2")
+        var box3 = document.querySelector("#box3")
+        var box4 = document.querySelector("#box4")
+        var box5 = document.querySelector("#box5")
+        var box6 = document.querySelector("#box6")
+        var box7 = document.querySelector("#box7")
+        var box8 = document.querySelector("#box8")
+        
+
+        function btn01(){
+            box1_1.style.display= "none"
+            box1_2.style.display = "block"
+            box2_1.style.display= "block"
+            box2_2.style.display = "none"
+            box3_1.style.display= "block"
+            box3_2.style.display = "none"
+            box4_1.style.display= "block"
+            box4_2.style.display = "none"
+
+            
+    }
+
+        function btn02(){
+            box1_1.style.display= "block"
+            box1_2.style.display = "none"
+            box2_1.style.display= "none"
+            box2_2.style.display = "block"
+            box3_1.style.display= "block"
+            box3_2.style.display = "none"
+            box4_2.style.display = "none"
+    }
+
+        function btn03(){
+            box1_1.style.display= "block"
+            box1_2.style.display = "none"
+            box2_1.style.display= "block"
+            box2_2.style.display = "none"
+            box3_1.style.display= "none"
+            box3_2.style.display = "block"
+            box4_1.style.display= "block"
+            box4_2.style.display = "none"
+        }
+        function btn04(){
+            box1_1.style.display= "block"
+            box1_2.style.display = "none"
+            box2_1.style.display= "block"
+            box2_2.style.display = "none"
+            box3_1.style.display= "block"
+            box3_2.style.display = "none"
+            box4_1.style.display= "none"
+            box4_2.style.display = "block"
+        }
+        function box01(){
+            box5.style.display = "block"
+            box6.style.display = "none"
+            box7.style.display = "none"
+            box8.style.display = "none"
+        }
+        
+        function box02(){
+            box5.style.display = "none"
+            box6.style.display = "block"
+            box7.style.display = "none"
+            box8.style.display = "none"
+        }
+        
+        function box03(){
+            box5.style.display = "none"
+            box6.style.display = "none"
+            box7.style.display = "block"
+            box8.style.display = "none"
+        }
+
+        function box04(){
+            box5.style.display = "none"
+            box6.style.display = "none"
+            box7.style.display = "none"
+            box8.style.display = "block"
+        }
+        
+        box01(),btn01()
+        
+    </script>
+
+
+
+</body>
+
+</html>

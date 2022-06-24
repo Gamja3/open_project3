@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>GPS 카카오 연동</title>
+		<meta charset="utf-8" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/client/css/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- QR -->
+    <script src="/client/js/library/jsQR.js"></script>
+    <script src="/client/js/qr.js" defer></script>
+  </head>
+  <body>
+<style>
+  .QR_shadow {
+    position: absolute;
+    width: 84%;
+    max-width: 440px;
+    height: 440px;
+    top:40%;
+    border: 2px solid white;
+    border-radius: 1em;
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+    transform: translateY(-50%);
+  }
+
+  .QR_innerText { 
+    position: absolute;
+    bottom:40%;
+    font-size:24px;
+    color: white;
+  }
+</style>
+
+
+    <!-- <nav class="flex-c-c-c component-title-nav">
+      <p class="flex-c-c nav-title theme-font">GPS 카카오 연동</p>
+      <div class="flex-c-c nav-sub-title">QR인증</div>
+    </nav> -->
+
+    <div class="container mx-auto">
+      <div class="mx-auto">
+        <p class="wait-text">화면을 인식중입니다.</p>
+      </div>  
+      <div class="relative flex justify-center items-center">
+        <canvas id="canvas">
+        </canvas>
+        <div class="QR_shadow"></div>
+        <div class="QR_innerText">QR코드를 스캔하세요</div>
+      </div>
+    </div>
+    
+
+<!-- bootstrap navbar -->
+<%- include('footer.html') %>
+<!-- // bootstrap navbar -->
+
+  </body>
+</html>
